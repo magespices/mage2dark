@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Created by Q-Solutions Studio
+* Date: 22.11.2019
+*
+* @author	Przemysław Jankowski <przemek@qsolutionsstudio.com>
+*/
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-login" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="styles" />
+    <body>
+<!--        <referenceBlock name="logo">-->
+<!--            <arguments>-->
+<!--                <argument name="logo_image_src" xsi:type="string">images/admin-login-logo.png</argument>-->
+<!--            </arguments>-->
+<!--        </referenceBlock>-->
+    </body>
+</page>

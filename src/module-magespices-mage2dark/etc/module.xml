@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Created by Q-Solutions Studio
+* MageSpices
+*
+* @package  MageSpices_Mage2Dark
+* @author   Jakub Winkler <jwinkler@qsolutionsstudio.com> @MagentoNinja
+* @author	Przemysław Jankowski <przemek@qsolutionsstudio.com>
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+  <module name="MageSpices_Mage2Dark" setup_version="1.0.0" />
+</config>

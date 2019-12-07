@@ -1,0 +1,23 @@
+<!--
+/**
+* Created by Q-Solutions Studio
+* Date: 22.11.2019
+*
+* @author	Przemysław Jankowski <przemek@qsolutionsstudio.com>
+*/
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+    	<referenceContainer name="header">
+<!--    		<referenceBlock name="logo">-->
+<!--	            <arguments>-->
+<!--	                <argument name="logo_img_width" xsi:type="number">300</argument> -->
+<!--	                <argument name="logo_img_height" xsi:type="number">300</argument>-->
+<!--	                <argument name="show_part" xsi:type="string">logo</argument>-->
+<!--                    <argument name="edition" translate="true" xsi:type="string">Community Edition</argument>-->
+<!--                    <argument name="logo_image_src" xsi:type="string">images/logo.png</argument>-->
+<!--	            </arguments>-->
+<!--	        </referenceBlock>-->
+    	</referenceContainer>
+    </body>
+</page>

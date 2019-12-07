@@ -1,0 +1,19 @@
+<?php
+/** @var MageSpices\Core\Block\SlideBox $block */
+?>
+<?php if ($block->isEnabled()): ?>
+    <div class="b-box b-box--sticky-side-widget js-sticky-side-widget" id="sticky_side_widget">
+        <button type="button" class="b-box--sticky-side-widget__btn js-sticky-side-widget-trigger">
+            <span class="b-box--sticky-side-widget__btn-label">
+                <img src="<?php echo $block->getViewFileUrl('MageSpices_Core::images/q_logo_small.svg'); ?>" />
+            </span>
+        </button>
+        <div class="b-box--sticky-side-widget__content">
+            <iframe src="https://mage2dark.net/iframe.html" height="600" width="400">
+            </iframe>
+        </div>
+    </div>
+    <script>
+        requirejs(['jquery', 'stickySideWidget'], function($) {});
+    </script>
+<?php endif; ?>

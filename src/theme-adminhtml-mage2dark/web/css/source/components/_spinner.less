@@ -1,0 +1,123 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Spinner
+//  _____________________________________________
+
+//  Base spinner
+
+.spinner {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    animation: loader 2s infinite ease-in-out;
+
+    span {
+        width: 25px;
+        height: 25px;
+        
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: 4px solid transparent;
+    
+        &:nth-child(1) {
+            animation: span1 2s ease-in-out infinite;
+        }
+    
+        &:nth-child(2) {
+            animation: span2 2s ease-in-out infinite;
+        }
+    
+        &:nth-child(3) {
+            animation: span3 2s ease-in-out infinite;
+        }
+    
+        &:nth-child(4) {
+            animation: span4 2s ease-in-out infinite;
+        }
+    
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8) {
+            display: none;
+        }
+        
+    }
+}
+
+//  ToDo UI: remove old loaders style while loaders redesign
+
+.popup-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-color: @color-light-phoenix;
+    color: @color-light-phoenix;
+    font-size: 14px;
+    font-weight: bold;
+    left: 50%;
+    margin-left: -100px;
+    padding: 10px 0 10px;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    width: 200px;
+    z-index: 1003;
+
+    //&:after {
+    //    background-image: url('@{baseDir}images/loader-1.gif');
+    //    content: '';
+    //    height: 64px;
+    //    left: 50%;
+    //    margin: -32px 0 0 -32px;
+    //    position: absolute;
+    //    top: 40%;
+    //    width: 64px;
+    //    z-index: 2;
+    //}
+}
+
+//  Loading mask
+.loading-old,
+.loading-mask {
+    background: @color-dark;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2003;
+
+    img {
+        display: none;
+    }
+
+    p {
+        margin-top: 118px;
+    }
+
+    .loader {
+        background: @color-ivory url('@{baseDir}images/loader-1.gif') no-repeat 50% 30%;
+        border-radius: 5px;
+        bottom: 0;
+        color: @color-gray34;
+        font-size: 14px;
+        font-weight: bold;
+        height: 160px;
+        left: 0;
+        margin: auto;
+        opacity: .95;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 0;
+        width: 160px;
+    }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+* Created by Q-Solutions Studio
+* MageSpices
+*
+* @package  MageSpices_Mage2Dark
+* @author   Jakub Winkler <jwinkler@qsolutionsstudio.com> @MagentoNinja
+* @author	Przemysław Jankowski <przemek@qsolutionsstudio.com>
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Theme\Model\View\Design">
+        <arguments>
+            <argument name="themes" xsi:type="array">
+                <item name="adminhtml" xsi:type="string">MageSpices/Mage2Dark</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

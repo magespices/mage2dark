@@ -1,0 +1,93 @@
+@widget_width: 400px;
+
+.b-box {
+    &--sticky-side-widget {
+        position: fixed;
+        top: 200px;
+        right: 0;
+        width: @widget_width;
+        z-index: 900;
+        -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        transform: translateX(100%);
+
+        .transition(transform, .3s);
+
+        &.is-visible {
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        &__btn {
+            &:extend(.display-flex);
+            &:extend(.align-items-center);
+            &:extend(.justify-content-center);
+
+            position: absolute;
+            top: 20px;
+            left: -60px;
+            height: 60px;
+            width: 60px;
+            background-color: @color-white;
+            padding: 5px;
+            -webkit-transform-origin: 50%  51%;
+            -ms-transform-origin: 50%  51%;
+            -moz-transform-origin: 50%  51%;
+            transform-origin: 50%  51%;
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+            cursor: pointer;
+
+            border: 2px solid @color-phoenix;
+            border-right: none;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+
+            &:hover {
+                background-color: @color-white;
+            }
+
+            &:focus {
+                background-color: @color-white;
+            }
+        }
+
+
+        &__btn-label {
+            display: block;
+            font-size: 1.4rem;
+            white-space: nowrap;
+            color:  #6d6e70;
+        }
+
+        &__content {
+            width: @widget_width;
+            height: auto;
+            min-height: 300px;
+            background-color:  #ffffff;
+            padding: 5px;
+        }
+
+        &__desc {
+            margin-bottom: 30px;
+        }
+
+        &__call {
+            text-align: center;
+        }
+    }
+}
+
+#sticky_side_widget {
+    .b-box {
+        &--sticky-side-widget {
+            display: none;
+
+            &__content {
+                iframe {
+                    border: 0;
+                }
+            }
+        }
+    }
+}

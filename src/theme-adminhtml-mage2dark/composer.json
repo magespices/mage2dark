@@ -1,0 +1,14 @@
+{
+    "name": "Dark Theme",
+    "description": "Dark theme for Admin Panel in Magento 2",
+    "license": "MIT",
+    "type": "magento2-theme",
+    "require": {
+        "magento/framework": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    }
+}

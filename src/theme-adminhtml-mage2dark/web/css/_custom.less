@@ -1,0 +1,479 @@
+/* Dark mode
+   ========================================================================== */
+body {
+    background-color: @color-dark !important;
+}
+
+button {
+    transition: @smooth__all;
+}
+
+.page-header {
+    border-bottom-color: @color-dark-gray !important;
+}
+
+.admin__menu .submenu-title,
+.admin__menu .submenu a {
+    color: @text__color;
+}
+
+.data-grid {
+    
+    td {
+        background-color: @color-dark;
+    }
+}
+
+.data-grid tr._odd-row td {
+    background-color: @color-gray-5;
+}
+
+.data-grid-checkbox-cell-inner {
+    text-align: center;
+}
+
+.input-text {
+    &:extend(.abs-form-control-pattern all);
+}
+
+.admin__control-table td, .admin__control-table th {
+    color: @text__color;
+    background-color: @color-dark;
+    border: 1px solid transparent.1rem solid @color-dark-gray;
+    border-left-color: transparent;
+    padding: 1.3rem 1rem 1.3rem 1rem;
+    
+    &:first-child {
+        border-left-color: @color-dark-gray;
+    }
+}
+
+.admin__control-table tr:last-child td {
+    border-bottom: 0.1rem solid @color-dark-gray;
+}
+
+.admin__control-text[disabled],
+.admin__control-select[disabled],
+.admin__control-multiselect[disabled],
+.admin__control-file[disabled] + .admin__control-file-label:before,
+.admin__control-textarea[disabled],
+.admin__control-addon [class*='admin__control-'][class][disabled] ~ [class*='admin__addon-']:last-child:before,
+[class*='adminhtml-giftwrapping-'] .field-base_price .admin__control-addon [class*='admin__control-'][class][disabled] ~ .addafter:last-child:before,
+.input-text[disabled], .ui-datepicker .ui-datepicker-title select[disabled] {
+    background-color: @color-gray;
+}
+
+.image .product-image-wrapper {
+    background: @color-gray;
+    border-color: transparent;
+}
+
+.abs-admin__field-tooltip-content,
+.admin__field-tooltip .admin__field-tooltip-content,
+.gift-options-tooltip {
+    background: @color-gray-4;
+    border-color: @color-dark;
+}
+
+.admin__field-tooltip .admin__field-tooltip-content:after, .admin__field-tooltip .admin__field-tooltip-content:before {
+    border-top-color: @color-dark;
+}
+
+.admin__field-tooltip .admin__field-tooltip-content:after {
+    border-top-color: @color-gray-4;
+}
+
+.order-errors .admin__fieldset-wrapper .title {
+    color: @text__color;
+}
+
+.admin__field-error, label.mage-error {
+    color: @color-white;
+    background: #c4351b;
+    border:  none;
+}
+
+.admin__menu .level-0 > .submenu,
+.admin__menu .level-0._active > a,
+.admin__menu .level-0:hover > a {
+    background-color: @color-dark-2;
+}
+
+.admin__menu [class*='level-']:not(.level-0) a:hover {
+    color: @color-light-phoenix;
+    background-color: @color-very-dark-gray-black3;
+}
+
+.x-tree-node a span, .x-dd-drag-ghost a span {
+    color: @text__color;
+}
+
+.x-tree-node .x-tree-selected a span {
+    background: @color-yellow;
+}
+
+.admin__page-nav,
+.order-sidebar {
+    background: @color-gray;
+    border-color: @color-dark-gray;
+}
+
+.admin__page-nav-title,
+.admin__page-nav-item._active .admin__page-nav-link,
+.admin__page-nav-item.ui-state-active .admin__page-nav-link {
+    color: @text__color;
+    border-top-color: @color-dark-gray;
+    border-bottom-color: @color-dark-gray;
+}
+
+.admin__scope-old .fieldset-wrapper,
+.admin__scope-old .fieldset {
+    background: @color-dark;
+}
+
+.admin__scope-old .fieldset-wrapper > .fieldset-wrapper-title .title,
+.admin__scope-old .fieldset > .legend span {
+    color: @text__color;
+}
+
+.admin__scope-old .fieldset-wrapper > .fieldset-wrapper-title, .admin__scope-old .fieldset > .legend {
+    border-bottom-color: @color-dark-gray;
+}
+
+.admin__scope-old .rule-param .label {
+    color: #dadada;
+}
+
+.admin__scope-old .form-inline div:not([class*='fields-group']) > .field > .label,
+.admin__scope-old .form-inline .fieldset > .field > .label {
+    color: @color-dark-gray;
+}
+
+.admin__scope-old input[type=text],
+.admin__scope-old input[type=password],
+.admin__scope-old input[type=datetime],
+.admin__scope-old input[type=datetime-local],
+.admin__scope-old input[type=date],
+.admin__scope-old input[type=month],
+.admin__scope-old input[type=time],
+.admin__scope-old input[type=week],
+.admin__scope-old input[type=number],
+.admin__scope-old input[type=range],
+.admin__scope-old input[type=email],
+.admin__scope-old input[type=url],
+.admin__scope-old input[type=search],
+.admin__scope-old input.search,
+.admin__scope-old input[type=tel],
+.admin__scope-old input[type=color],
+.admin__scope-old textarea,
+.admin__scope-old select {
+    border: 1px solid transparent;
+    color: @color-dark-gray;
+    background-color: @color-gray;
+}
+
+.admin__scope-old .field .control input[type='text'][disabled],
+.admin__scope-old .field .control input[type='text'][disabled] ~ .addafter,
+.admin__scope-old .field .control select[disabled],
+.admin__scope-old .field .control select[disabled] ~ .addafter {
+    background-color: @color-gray;
+    color: @color-dark-gray;
+    border: 1px solid transparent;
+}
+
+.admin__scope-old select:not([multiple]) {
+    background-color: @color-gray;
+    border: 1px solid transparent;
+    color: @color-dark-gray;
+    background-image: url('../images/arrows-bg.svg'), linear-gradient(@color-gray, @color-gray);
+}
+
+.admin__data-grid-toolbar .admin__data-grid-export .admin__control-select,
+.admin__data-grid-toolbar .admin__data-grid-export .ui-datepicker .ui-datepicker-title select {
+    background-color: @color-gray;
+    border: 1px solid transparent;
+}
+
+#google_app {
+    color: @text__color;
+}
+
+#google_app [class^='common_main-actions-panel'] {
+    background-color: @color-dark;
+    border-color: @color-dark-gray;
+}
+
+#google_app [class^='StatusBar_header'],
+#google_app [class^='StatusBar_status-bar'],
+#google_app [class^='StatusBar_status-period'] {
+    color: @text__color;
+}
+
+#google_app [class^='StatusBar_status-bar'] {
+    border-color: @color-dark-gray;
+}
+
+#google_app [class^='StatusBar_reports-link-container'] {
+    color: @text__color;
+    background-color: @color-dark;
+}
+
+#modal_root [class^='Modal_modal-container-main'] {
+    color: @text__color;
+    background-color: @color-dark;
+}
+
+[class^='common_header1'],
+[class^='common_header2'],
+[class^='common_header3'],
+[class^='ApiKeyInstructionModal_step-info'],
+[class^='common_font-medium'],
+[class^='StatusBar_status-value__'],
+[class^='StatusBar_status-item__'],
+[class^='DashboardLanding_header__'],
+.ReactTable .rt-noData,
+[class^='DashboardLandingActions_settings-button__'],
+[class^='DashboardLandingActions_settings-button__']:active,
+[class^='DashboardLandingActions_settings-button__']:focus,
+[class^='DashboardLandingActions_settings-button__']:hover,
+[class^='common_font-small'], small,
+[class^='common_header4'] {
+    color: @color-dark-gray !important;
+}
+
+.ReactTable .-pagination .-btn {
+    background: #2f2b29 !important;
+    border-color: transparent !important;
+    color: #808080 !important;
+}
+
+.ReactTable .-pagination input,
+.ReactTable .-pagination select {
+    &:extend(.abs-form-control-pattern all);
+    
+    background-color: #2f2b29 !important;
+    border: 1px solid #808080 !important;
+}
+
+.ReactTable .rt-table {
+    border-color: @color-dark-gray !important;
+}
+
+.ReactTable .rt-thead .rt-td,
+.ReactTable .rt-thead .rt-th {
+    color: @color-dark-gray !important;
+    background-color: #171717 !important;
+    border: 1px solid transparent.1rem solid #808080;
+}
+
+.ReactTable .rt-thead .rt-th {
+    border-top-color: transparent;
+}
+
+.yotpo_yotpo-report-reviews .page-wrapper {
+    color: @text__color;
+    background-image: none !important;
+}
+
+.yotpo_yotpo-report-reviews .yotpo-reviews-totals-no-appkey .yotpo-shaddow-boxes-container .yotpo-shaddow-box {
+    background-color: #272422;
+}
+
+.yotpo_yotpo-report-reviews .yotpo-reviews-totals-no-appkey .yotpo-title-content-container h2,
+.yotpo_yotpo-report-reviews .yotpo-reviews-totals-no-appkey .yotpo-title-content-container p,
+.yotpo_yotpo-report-reviews .yotpo-reviews-totals-no-appkey .yotpo-shaddow-boxes-container .yotpo-shaddow-box h3,
+.yotpo_yotpo-report-reviews .yotpo-reviews-totals-no-appkey .yotpo-shaddow-boxes-container .yotpo-shaddow-box p {
+    color: @text__color;
+}
+
+.yotpo-reviews-totals-no-appkey .already-have-account a {
+    color: #d2c82f;
+}
+
+.admin__scope-old label.mage-error {
+    background: #d2c82f;
+}
+
+.admin__scope-old .with-note .note, .admin__scope-old .field .note, .admin__scope-old .data-table .note {
+    color: @text__color;
+}
+
+.admin__scope-old .fieldset .fieldset-wrapper .fieldset-wrapper-title, .admin__scope-old .fieldset-wrapper .fieldset-wrapper .fieldset-wrapper-title {
+    background: @color-gray;
+    border: 1px solid @color-dark-gray;
+}
+
+.mage-new-video-dialog .video-player-container {
+    border: 1px solid transparent;
+    background: @color-gray;
+}
+
+.abs-video-gallery-icon:before, .video-item .product-image-wrapper:before, .mage-new-video-dialog .video-player-container:before,
+.abs-video-gallery-icon:hover:before, .video-item .product-image-wrapper:hover:before, .mage-new-video-dialog .video-player-container:hover:before {
+    color: @text__color;
+}
+
+.fieldset-wrapper-title, .admin__fieldset-wrapper-title {
+    border-bottom-color: @color-dark-gray;
+}
+
+.jstree-default.jstree-focused {
+    background: @color-dark;
+}
+
+.jstree a {
+    color: @color-dark-gray !important;
+}
+
+.accordion .config .label,
+.accordion .config .note {
+    color: @text__color;
+}
+
+.admin__page-nav._collapsed._show ._collapsible {
+    background: @color-white-fog2;
+    color: @color-very-dark-gray-black;
+    
+    &:hover {
+        color: @color-very-dark-gray-black;
+        background: @color-white-fog2;
+    }
+}
+
+.admin__page-nav-title,
+.admin__page-nav._collapsed._show {
+    border-bottom-color: @color-dark-gray;
+}
+
+.admin__scope-old input[disabled],
+.admin__scope-old select[disabled],
+.admin__scope-old textarea[disabled],
+.admin__scope-old input[readonly],
+.admin__scope-old select[readonly],
+.admin__scope-old textarea[readonly] {
+    color: @color-dark-gray;
+    background: @color-gray;
+    border-color: transparent;
+}
+
+.admin__scope-old select[disabled] option[selected] {
+    background-color: @color-gray;
+}
+
+.admin__page-nav-link {
+    color: @text__color;
+}
+
+.admin__control-multiselect option, .admin__control-multiselect optgroup {
+    color: @color-dark-gray !important;
+    background: @color-gray !important;
+}
+
+.admin__control-table td, .admin__control-table th,
+.paypal-top-section.active > .entry-edit-head.admin__collapsible-block {
+    border-bottom-color: @color-dark-gray !important;
+}
+
+.payments-other-header > .admin__collapsible-block > a::before,
+.paypal-other-header > .admin__collapsible-block > a::before {
+    border-top-color: @color-dark-gray !important;
+}
+
+.paypal-other-header > .admin__collapsible-block > a.open::before,
+.payments-other-header > .admin__collapsible-block > a.open::before {
+    border-bottom-color: @color-dark-gray !important;
+}
+
+.paypal-other-header > .admin__collapsible-block > a {
+    color: @color-dark-gray !important;
+}
+
+.accordion .config .note a {
+    color: #d2c82f;
+}
+
+.admin__form-field-control .admin__control-text.disabled,
+.admin__field-control .admin__control-text.disabled,
+.admin__form-field-control .admin__control-textarea.disabled,
+.admin__field-control .admin__control-textarea.disabled {
+    border-color: @color-dark-gray;
+    background-color: @color-gray;
+}
+
+.additional-cache-management h2 {
+    border-bottom-color: @color-dark-gray;
+}
+
+.additional-cache-management h2 span,
+.additional-cache-management span,
+.additional-cache-management p {
+    color: @text__color;
+}
+
+._disabled > .admin__field-label {
+    color: @text__color;
+}
+
+.admin__data-grid-toolbar .admin__grid-massaction .admin__grid-massaction-form .admin__control-select._selected ~ button {
+    background: @color-phoenix;
+    color: @color-white;
+    
+    &:hover,
+    &:active,
+    &:focus {
+        background: @color-phoenix-brown-almost;
+        color: @color-white;
+    }
+}
+
+.additional-cache-management {
+    button {
+        background: @color-phoenix;
+        color: @color-white;
+    
+        &:hover,
+        &:active,
+        &:focus {
+            background: @color-phoenix-brown-almost;
+            color: @color-white;
+        }
+    }
+}
+
+.admin__control-radio.disabled + label:before,
+.admin__control-checkbox.disabled + label:before,
+.admin__control-radio[disabled] + label:before,
+.admin__control-checkbox[disabled] + label:before {
+    background-color: @color-gray;
+}
+
+.admin__scope-old input[type="radio"],
+.admin__scope-old input[type="checkbox"] {
+    color: @color-dark-gray;
+    background: @color-gray;
+    border-color: @color-dark-gray;
+}
+
+.admin__action-multiselect-dropdown:before {
+    background: @color-gray;
+    color: @text__color;
+}
+
+.admin__action-multiselect-tree .admin__action-multiselect-label {
+    color: @text__color;
+}
+
+.action-menu-item._hover .admin__action-multiselect-label {
+    color: @color-gray;
+}
+
+.admin__action-multiselect-actions-wrap {
+    
+    .action-default {
+        .action-secondary();
+    }
+}
+
+.nav-bar > li.active a, .nav-bar > li.ui-state-active a {
+    color: @text__color;
+}

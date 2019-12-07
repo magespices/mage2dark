@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+/**
+ * Created by Q-Solutions Studio
+ *
+ * @category    MageSpices
+ * @package     MageSpices_Core
+ * @author      Sebastian Strojwas <sebastian@qsolutionsstudio.com>
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="before.body.end">
+            <block class="MageSpices\Core\Block\SlideBox" name="sticky.side.widget" template="MageSpices_Core::sticky_side_widget.phtml">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="components" xsi:type="array">
+                            <item name="adminUX" xsi:type="array">
+                                <item name="component" xsi:type="string">MageSpices_Core/js/sticky-side-widget</item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
