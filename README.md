@@ -10,6 +10,13 @@
  composer require magespices/mage2dark 
 ``` 
 
+and run:
+```
+    php bin/magento setup:upgrade 
+```
+
+to enable modules 
+
 *Warning*: Tested only on Magento 2.3.x Open Source
 
 ### Developed by:
