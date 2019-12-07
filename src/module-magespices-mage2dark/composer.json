@@ -5,8 +5,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "require": {
-    "magento/framework": ">=102.0.0",
-    "php": "~5.5.0|~5.6.0|~7.0.0"
+    "magento/framework": ">=102.0.0"
   },
   "autoload": {
     "files": [ "registration.php" ],
