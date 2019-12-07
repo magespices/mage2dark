@@ -2,6 +2,8 @@
 
 ### Mage2Dark - Magento 2.3.x Dark Theme for Admin Panel
 
+![image](https://mage2dark.net/images/dark-theme-mockup.png)
+
 ## Installation: 
 
 ```  
