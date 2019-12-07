@@ -1,10 +1,10 @@
 {
     "name": "Dark Theme",
     "description": "Dark theme for Admin Panel in Magento 2",
-    "license": "MIT",
+    "license": "OSL-3.0",
     "type": "magento2-theme",
     "require": {
-        "magento/framework": "*"
+        "magento/framework": ">=102.0.0"
     },
     "autoload": {
         "files": [

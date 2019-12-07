@@ -3,7 +3,7 @@
   "description": "Magento 2 Dark Theme",
   "type": "magento2-module",
   "version": "1.0.0",
-  "license": "MIT",
+  "license": "OSL-3.0",
   "require": {
     "magento/framework": ">=102.0.0"
   },
