@@ -39,7 +39,7 @@
     ],
     "psr-4": {
       "MageSpices\\Core\\": "src/module-magespices-core",
-      "MageSpices\\Mage2Dark": "src/module-magespices-mage2dark"
+      "MageSpices\\Mage2Dark\\": "src/module-magespices-mage2dark"
     }
   },
   "minimum-stability": "dev",
