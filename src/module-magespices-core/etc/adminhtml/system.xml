@@ -16,7 +16,7 @@
         </tab>
         <section id="mage2dark" translate="label" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
             <class>separator-top</class>
-            <label><![CDATA[Mage2Dark Theme Feedback]]></label>
+            <label><![CDATA[Mage2Dark Theme]]></label>
             <tab>magespices</tab>
             <resource>MageSpices_Core::config</resource>
             <group id="settings" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1"
