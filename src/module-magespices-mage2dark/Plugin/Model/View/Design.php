@@ -49,7 +49,7 @@ class Design
             $this->themeSelectionConfig = $this->scopeConfig->getValue('mage2dark/settings/theme_selection');
             if ($this->themeSelectionConfig == "auto") {
                 $currentHour = $this->timeZone->date()->format("H");
-                if (($currentHour >= 19 || $currentHour < 6)) {
+                if (($currentHour >= 19 || $currentHour < 7)) {
                     $this->themeSelectionConfig = "dark";
                 } else {
                     $this->themeSelectionConfig = "light";
