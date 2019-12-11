@@ -1,0 +1,7 @@
+#row_mage2dark_settings_light_theme_time_from,
+#row_mage2dark_settings_light_theme_time_to {
+    display: none;
+}
+.light-theme-slot .ui-slider-handle {
+    background: #ec5102;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+/**
+ * Created by Q-Solutions Studio
+ *
+ * @category    MageSpices
+ * @package     MageSpices_Core
+ * @author      Sebastian Strojwas <sebastian@qsolutionsstudio.com>
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="mage2dark">
+            <group id="settings">
+                <field id="theme_selection" translate="label comment" type="select" sortOrder="20" showInDefault="1">
+                    <label>Theme Selection</label>
+                    <source_model>MageSpices\Mage2Dark\Model\Config\Source\Selection</source_model>
+                    <comment>If "Auto" is selected, then please select time slot for light theme from next setting and outside of that time slot Dark theme will be in use.</comment>
+                </field>
+                <field id="light_theme_time" translate="label comment" type="text" sortOrder="30" showInDefault="1">
+                    <label>Light Theme</label>
+                    <frontend_model>MageSpices\Mage2Dark\Model\Config\FrontendModel\TimeSlider</frontend_model>
+                    <depends>
+                        <field id="theme_selection">auto</field>
+                    </depends>
+                </field>
+                <field id="light_theme_time_from" translate="label comment" type="hidden" sortOrder="40" showInDefault="1">
+                    <label>Light Theme Time From</label>
+                    <depends>
+                        <field id="theme_selection">auto</field>
+                    </depends>
+                </field>
+                <field id="light_theme_time_to" translate="label comment" type="hidden" sortOrder="50" showInDefault="1">
+                    <label>Light Theme Time To</label>
+                    <depends>
+                        <field id="theme_selection">auto</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
