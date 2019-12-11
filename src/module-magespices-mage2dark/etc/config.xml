@@ -4,6 +4,8 @@
         <mage2dark>
             <settings>
                 <theme_selection>auto</theme_selection>
+                <light_theme_time_from>420</light_theme_time_from>
+                <light_theme_time_to>1140</light_theme_time_to>
             </settings>
         </mage2dark>
     </default>
