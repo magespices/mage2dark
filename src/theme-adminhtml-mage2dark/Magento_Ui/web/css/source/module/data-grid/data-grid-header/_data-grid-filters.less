@@ -132,6 +132,15 @@
         padding-right: @data-grid-filters-action__padding-right;
         padding-top: @action__padding-top + .1rem;
         
+        &:hover,
+        &:focus,
+        &:active {
+    
+            &:before {
+                color: @color-light;
+            }
+        }
+        
         &._active {
             color: @color-white;
             background-color: @data-grid-filters__background-color;
@@ -169,6 +178,7 @@
             position: relative;
             top: -1px;
             vertical-align: top;
+            transition: color 0.3s ease;
         }
     }
     
